@@ -1,5 +1,5 @@
-SRCS=./backend/app/*.java
-PKGS=./backend/app/*.class
+SRCS=./backend/app/*.java ./backend/configservice/*.java ./backend/utils/*.java
+PKGS=./backend/app/*.class ./backend/configservice/*.class ./backend/utils/*.class
 
 all:
 	javac ${SRCS}
