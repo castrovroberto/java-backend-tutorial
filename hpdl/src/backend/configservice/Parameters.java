@@ -20,13 +20,24 @@ public class Parameters implements ParametersMBean{
 		return parameters;
 	}
 
-	private int LISTENER_READ_TIMER;
-
-	public int getListenerReadTimer(){
-		return this.LISTENER_READ_TIMER;
+	private Parameters(){
+		this.readPropertiesFile();
 	}
 
+	private int listenerReadTimer;
+	private String masterLogLevel;
+	private String masterLogFile;
+	private String inputDirectory;
+	private String outputDirectory;
+
+	public int getListenerReadTimer(){return this.listenerReadTimer;}
+	public String getMasterLogLevel(){return this.masterLogLevel;}
+	public String getMasterLogFile(){return this.masterLogFile;}
+	public String getInputDirectory(){return this.inputDirectory;}
+	public String getOutputDirectory(){return this.outputDirectory;}
+
 	public void readPropertiesFile(){
+		String baseDirectory = System.getenv(CustomConstants.HPDL_BASE_DIR);
 		String configFileName = System.getenv(CustomConstants.APP_CONFIG_FILENAME);
 		try(BufferedReader br = new BufferedReader(new FileReader(configFileName))){
 			String sCurrentLine;
@@ -34,13 +45,25 @@ public class Parameters implements ParametersMBean{
 			String sCurrentLineValue;
 
 			while((sCurrentLine = br.readLine()) != null){
-				if(!sCurrentLine.isEmpty() && sCurrentLine.contains("backend.hpdl.app")) {
+				if(!sCurrentLine.isEmpty() && sCurrentLine.contains(CustomConstants.CONFIG_PROP_PREFIX)) {
 					sCurrentLineTag = sCurrentLine.split("=")[0];
 					sCurrentLineValue = sCurrentLine.split("=")[1];
 
 					switch(sCurrentLineTag){
-						case "backend.hpdl.app.read.timer":
-							LISTENER_READ_TIMER = Integer.parseInt(sCurrentLineValue);
+						case CustomConstants.INPUT_READ_TIMER:
+							listenerReadTimer = Integer.parseInt(sCurrentLineValue);
+							break;
+						case CustomConstants.MASTER_LOG_LEVEL:
+							masterLogLevel = sCurrentLineValue;
+							break;
+						case CustomConstants.MASTER_LOG_FILENAME:
+							masterLogFile = baseDirectory + sCurrentLineValue;
+							break;
+						case CustomConstants.APP_INPUT_DIRECTORY:
+							inputDirectory = baseDirectory + sCurrentLineValue;
+							break;
+						case CustomConstants.APP_OUTPUT_DIRECTORY:
+							outputDirectory = baseDirectory + sCurrentLineValue;
 							break;
 						default:
 							break;

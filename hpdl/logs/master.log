@@ -1,0 +1,27 @@
+I - 2019-11-25T22:37:17.600750 - INFO: ENGINE Engine Starting!
+I - 2019-11-25T22:37:17.600956 - INFO: ENGINE Registering ConfigService MBean
+I - 2019-11-25T22:37:17.667221 - INFO: ENGINE ConfigService MBean successfully registered
+I - 2019-11-25T22:37:17.667306 - INFO: ENGINE Starting daemon thread
+D - 2019-11-25T22:37:17.667815 - DEBUG: LISTENER_THREAD Checking input file directory
+D - 2019-11-25T22:37:17.667890 - DEBUG: LISTENER_THREAD Checking stop flag
+D - 2019-11-25T22:37:17.668869 - DEBUG: FILE_MANAGER Checking input directory: /home/roberto/Projects/Tuts/java-backend-tutorial/hpdl/input/
+D - 2019-11-25T22:37:27.669369 - DEBUG: LISTENER_THREAD Stoping working thread!
+I - 2019-11-25T22:38:39.890442 - INFO: ENGINE Engine Starting!
+I - 2019-11-25T22:38:39.890649 - INFO: ENGINE Registering ConfigService MBean
+I - 2019-11-25T22:38:39.955635 - INFO: ENGINE ConfigService MBean successfully registered
+I - 2019-11-25T22:38:39.955726 - INFO: ENGINE Starting daemon thread
+D - 2019-11-25T22:38:39.956229 - DEBUG: LISTENER_THREAD Checking input file directory
+D - 2019-11-25T22:38:39.956305 - DEBUG: LISTENER_THREAD Checking stop flag
+D - 2019-11-25T22:38:39.957120 - DEBUG: FILE_MANAGER Checking input directory: /home/roberto/Projects/Tuts/java-backend-tutorial/hpdl/input/
+I - 2019-11-25T22:39:33.608437 - INFO: ENGINE Engine Starting!
+I - 2019-11-25T22:39:33.608642 - INFO: ENGINE Registering ConfigService MBean
+I - 2019-11-25T22:39:33.674323 - INFO: ENGINE ConfigService MBean successfully registered
+I - 2019-11-25T22:39:33.674412 - INFO: ENGINE Starting daemon thread
+D - 2019-11-25T22:39:33.674925 - DEBUG: LISTENER_THREAD Checking input file directory
+D - 2019-11-25T22:39:33.675001 - DEBUG: LISTENER_THREAD Checking stop flag
+D - 2019-11-25T22:39:33.675919 - DEBUG: FILE_MANAGER Checking input directory: /home/roberto/Projects/Tuts/java-backend-tutorial/hpdl/input/
+D - 2019-11-25T22:39:43.676395 - DEBUG: LISTENER_THREAD Checking input file directory
+D - 2019-11-25T22:39:43.676825 - DEBUG: LISTENER_THREAD Checking stop flag
+D - 2019-11-25T22:39:43.677203 - DEBUG: FILE_MANAGER Checking input directory: /home/roberto/Projects/Tuts/java-backend-tutorial/hpdl/input/
+D - 2019-11-25T22:39:43.677720 - DEBUG: FILE_MANAGER Detecting stop flag semaphore... 
+D - 2019-11-25T22:39:53.680256 - DEBUG: LISTENER_THREAD Stoping working thread!
