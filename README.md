@@ -1,6 +1,6 @@
 # Java Simple Daemon Tutorial
 
-This a simple backend daemon process written in Java
+This a simple backend daemon process written in Java.
 This is part of a series of assignments made to serve as an example on Backend Development with Java.
 Special focus is put on high performance batch processess that must handle large amounts of files, records or both.
 
@@ -57,7 +57,7 @@ sh stop_engine.sh
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 
 ## Acknowledgments
 
